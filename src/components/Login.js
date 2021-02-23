@@ -1,13 +1,17 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import APIService from '../APIService';
+
 
 function Login() {
 
 
-    const [username, setUsername] = useState()
-    const [password, setPassword] = useState()
+    const [username, setUsername] = useState('')
+    const [password, setPassword] = useState('')
 
     const loginButton = () => {
-
+        APIService.LoginUser({username, password})
+        .then(resp => console.log(resp))
+        .catch(error => console.log(error))
     }
 
     return (
@@ -28,7 +32,7 @@ function Login() {
 
             <div className="mb-3">
                 <label htmlFor="password"
-                        className="form-label">Username</label>
+                        className="form-label">Password</label>
                 <input type="password"
                         className="form-control"
                         id="password"

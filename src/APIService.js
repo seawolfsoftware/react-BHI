@@ -40,7 +40,7 @@ export default class APIService {
 
 
     static LoginUser(body){
-        return fetch(`https://telexi.seawolfsoftware.io/api/v1/`,
+        return fetch(`https://telexi.seawolfsoftware.io/auth/`,
                     {
             'method': 'POST',
             headers: {
