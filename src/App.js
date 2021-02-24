@@ -5,6 +5,7 @@ import PresseventList from './components/PresseventList';
 import Form from './components/Form';
 import {useCookies} from 'react-cookie';
 import {useHistory} from 'react-router-dom';
+import telexiLogo from './static/img/rsz_telexi_blue_transparent.png';
 
 
 
@@ -67,17 +68,35 @@ function App() {
   return (
     <div className="App">
 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+      <img className="telexi_logo" src={telexiLogo} alt="telexi logo" height="58px"/>
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> <button onClick={logoutButton}
+                className="logoutButton">Logout</button></a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
     <div className="row">
       <div className="col">
-        <h2 className="telexi_header">telexi</h2>
+        <h2 className="stream_header">Event Stream</h2>
         <br/>
         <br/>
       </div>
 
-      <div className="col">
-        <button onClick={logoutButton}
-              className="logoutButton">Logout</button>
-      </div>
+
     </div>
 
 
