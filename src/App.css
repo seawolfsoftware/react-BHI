@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+
+.logoutButton{
+
+  border-radius: 5%;
+  background-color: #235789;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+}
+
+.telexi_header {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.streambox {
+  margin-top: 5%;
+  margin-left: 15%;
+}
+
+

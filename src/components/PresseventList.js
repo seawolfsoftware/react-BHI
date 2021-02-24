@@ -19,31 +19,33 @@ function PresseventList(props) {
 
     return (
 
-        <div class="container">
+        <div class="streambox">
 
           {props.pressevents && props.pressevents.map(pressevent => {
 
             return (
-              <div className="row">
-                  <div className="row"
-                        key={pressevent.id}>
 
-                    <div className="col-sm-1">
-                      <h4>{pressevent.device_id}</h4>
-                    </div>
+                <div className="row justify-content-start">
+                    <div className="row"
+                          key={pressevent.id}>
 
-                    <div className="col-sm-8">
-                      <h5>{pressevent.created_at}</h5>
-                    </div>
+                      <div className="col-sm-1">
+                        <h4>{pressevent.device_id}</h4>
+                      </div>
 
-                    <div className="col-sm-3">
-                      <button onClick={() => deleteButton(pressevent)}
-                              className="btn btn-danger">Delete</button>
-                    </div>
+                      <div className="col-sm-8">
+                        <h5>{pressevent.created_at}</h5>
+                      </div>
 
-                    <hr className="col hrclass"/>
+                      <div className="col-sm-3">
+                        <button onClick={() => deleteButton(pressevent)}
+                                className="btn btn-danger">Delete</button>
+                      </div>
+
+                      <hr className="col hrclass"/>
+                  </div>
                 </div>
-              </div>
+
 
           )
         })}

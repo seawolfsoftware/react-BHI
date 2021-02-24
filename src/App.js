@@ -7,6 +7,7 @@ import {useCookies} from 'react-cookie';
 import {useHistory} from 'react-router-dom';
 
 
+
 function App() {
 
 
@@ -56,22 +57,10 @@ function App() {
 
   }
 
-  const updatedInformation= (pressevent) => {
-      const new_pressevent = pressevents.map(mypressevent => {
-        if(mypressevent.id == pressevent.id){
-          return pressevent;
-        }
-        else{
-          return mypressevent;
-        }
-      })
-
-      setPressevents(new_pressevent)
-  }
-
 
   const presseventForm= () => {
-    setEditPressevent({device_id: '', is_button_on: true, created_at: ''})
+    setEditPressevent({device_id: '',
+      is_button_on: true})
   }
 
 
@@ -80,22 +69,21 @@ function App() {
 
     <div className="row">
       <div className="col">
-        <h2>telexi stream</h2>
+        <h2 className="telexi_header">telexi</h2>
         <br/>
         <br/>
       </div>
 
       <div className="col">
-        <button onClick={logoutButton} className="btn btn-primary">Logout</button>
+        <button onClick={logoutButton}
+              className="logoutButton">Logout</button>
       </div>
     </div>
 
-    <div className="row">
-
-    </div>
 
 
-      <PresseventList pressevents={pressevents} deleteButton={deleteButton}/>
+      <PresseventList pressevents={pressevents}
+                      deleteButton={deleteButton}/>
 
     </div>
   );
