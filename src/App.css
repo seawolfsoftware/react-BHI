@@ -52,12 +52,11 @@
 
 
 .telexi_logo {
-  /*background-image: linear-gradient(to right, rgba(255, 246, 71), rgba(255,0,0,1));*/
 }
 
 .streambox {
   margin-top: 3%;
-  margin-left: 35%;
+  /*margin-left: 35%;*/
 }
 
 
@@ -89,9 +88,31 @@
     display: block;
   }
 
+  .telexi_logo {
+    height: 70px;
+  }
+
+  .navbar {
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+    height: 115px;
+  }
+
+  .profile_icon {
+
+    height: 65px;
+
+  }
+
   .streambox {
     margin-top: 3%;
-    margin-left: 15%;
-}
+    /*margin-left: 15%;*/
+  }
+
+  .press_events {
+    width: 100%;
+  }
+
 }
 

@@ -69,34 +69,34 @@ function App() {
   return (
     <div className="App">
 
-<nav className="navbar navbar-inverse">
-  <div className="container-fluid">
-    <div className="navbar-header">
-      <a className="navbar-brand"
-          href="#">
-      <img className="telexi_logo"
-            src={telexiLogo}
-            alt="telexi logo"
-            height="75px"/>
-      </a>
-    </div>
-    <ul className="nav navbar-nav">
-
-    </ul>
-    <ul className="nav navbar-nav navbar-right">
-      <li><a href="#">
-            <button onClick={logoutButton}
-                    className="logoutButton">
-                    <img
-                      src={profile_icon}
-                      alt="profile icon"
-                      height="75px"/>
-            </button>
+    <nav className="navbar navbar-inverse">
+      <div className="container-fluid">
+        <div className="navbar-header">
+          <a className="navbar-brand"
+              href="#">
+          <img className="telexi_logo"
+                src={telexiLogo}
+                alt="telexi logo"
+                height="75px"/>
           </a>
-      </li>
-    </ul>
-  </div>
-</nav>
+        </div>
+        <ul className="nav navbar-nav">
+
+        </ul>
+        <ul className="nav navbar-nav navbar-right">
+          <li><a href="#">
+                <button onClick={logoutButton}
+                        className="logoutButton">
+                        <img className="profile_icon"
+                          src={profile_icon}
+                          alt="profile icon"
+                          height="75px"/>
+                </button>
+              </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
 
     <div className="row">
@@ -105,15 +105,12 @@ function App() {
         <br/>
         <br/>
       </div>
-
-
     </div>
 
-
-
-      <PresseventList pressevents={pressevents}
-                      deleteButton={deleteButton}/>
-
+      <div className="press_events">
+        <PresseventList pressevents={pressevents}
+                        deleteButton={deleteButton}/>
+      </div>
     </div>
   );
 }
