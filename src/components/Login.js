@@ -1,5 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import APIService from '../APIService';
+import {useCookies} from 'react-cookie';
+import {useHistory} from 'react-router-dom';
 
 
 function Login() {
@@ -7,10 +9,18 @@ function Login() {
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const [token, setToken] = useCookies(['mytoken'])
+    let history = useHistory()
+
+    useEffect(() => {
+        if(token['mytoken']){
+            history.push('/press_events')
+        }
+    }, [token])
 
     const loginButton = () => {
         APIService.LoginUser({username, password})
-        .then(resp => console.log(resp))
+        .then(resp => setToken('mytoken', resp.token))
         .catch(error => console.log(error))
     }
 

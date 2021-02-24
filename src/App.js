@@ -3,6 +3,7 @@ import './App.css';
 import React, {useState, useEffect} from 'react';
 import PresseventList from './components/PresseventList';
 import Form from './components/Form';
+import {useCookies} from 'react-cookie';
 
 
 function App() {
@@ -10,12 +11,14 @@ function App() {
 
   const [pressevents, setPressevents] = useState([])
   const [editPressevent, setEditPressevent] = useState(null)
+  const [token] = useCookies(['mytoken'])
 
   useEffect(() => {
-    fetch('https://telexi.seawolfsoftware.io/api/v1', {
+    fetch('https://telexi.seawolfsoftware.io/api/v1/press_events/', {
       'method': 'GET',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Authorization': `Token ${token['mytoken']}`,
       }
     })
   .then(resp => resp.json())

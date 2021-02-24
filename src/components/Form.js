@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import APIService from '../APIService';
+import {useCookies} from 'react-cookie';
 
 
 
@@ -9,7 +10,7 @@ function Form(props) {
     const [device_id, setDeviceID] = useState(props.pressevent.device_id)
     const [is_button_on, setIsButtonOn] = useState(props.pressevent.is_button_on)
     const [created_at, setCreatedAt] = useState(props.pressevent.created_at)
-
+    const [token] = useCookies(['mytoken'])
 
     useEffect(() => {
         setDeviceID(props.pressevent.device_id)
@@ -18,13 +19,13 @@ function Form(props) {
     }, [props.pressevent])
 
     const updatePressevent = () => {
-        APIService.UpdatePressevent(props.pressevent.id, {device_id, is_button_on, created_at})
+        APIService.UpdatePressevent(props.pressevent.id, {device_id, is_button_on, created_at}, token['mytoken'])
         .then(resp => props.updatedInformation(resp))
 
     }
 
     const insertPressevent = () => {
-        APIService.InsertPressevent({device_id, is_button_on, created_at})
+        APIService.InsertPressevent({device_id, is_button_on, created_at}, token['mytoken'])
         .then(resp => props.insertedInformation(resp))
     }
 
