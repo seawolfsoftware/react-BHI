@@ -10,6 +10,7 @@ function Login() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [token, setToken] = useCookies(['mytoken'])
+    const [isLogin, setLogin] = useState(true)
     let history = useHistory()
 
     useEffect(() => {
@@ -24,10 +25,17 @@ function Login() {
         .catch(error => console.log(error))
     }
 
+    const registerButton = () => {
+        APIService.RegisterUser({username, password})
+        .then(() => loginButton())
+        .catch(error => console.log(error))
+    }
+
     return (
         <div className="App">
 
-            <h1>Login</h1>
+            {isLogin ? <h1>Login</h1> : <h1>Register</h1> }
+
 
             <div className="mb-3">
                 <label htmlFor="username"
@@ -52,7 +60,19 @@ function Login() {
             </div>
 
 
-            <button onClick={loginButton} className="btn btn-primary">Login</button>
+            {isLogin ? <button onClick={loginButton} className="btn btn-primary">Login</button>
+            : <button onClick={registerButton} className="btn btn-primary">Register</button>}
+
+
+
+
+            <div className="mb-3">
+                {isLogin ? <h5>If you don't have an account, create one
+                <button className="btn btn-primary" onClick={() => setLogin(false)}>Register</button>here</h5> :
+                <h5>If you have an account, <button className="btn btn-primary" onClick={() => setLogin(true)}>Login</button>here</h5>}
+            </div>
+
+
         </div>
     )
 }

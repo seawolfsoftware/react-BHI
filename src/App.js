@@ -4,6 +4,7 @@ import React, {useState, useEffect} from 'react';
 import PresseventList from './components/PresseventList';
 import Form from './components/Form';
 import {useCookies} from 'react-cookie';
+import {useHistory} from 'react-router-dom';
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
 
   const [pressevents, setPressevents] = useState([])
   const [editPressevent, setEditPressevent] = useState(null)
-  const [token] = useCookies(['mytoken'])
+  const [token, setToken, removeToken] = useCookies(['mytoken'])
+  let history = useHistory()
 
   useEffect(() => {
     fetch('https://telexi.seawolfsoftware.io/api/v1/press_events/', {
@@ -27,6 +29,11 @@ function App() {
 
   }, [])
 
+    useEffect(() => {
+        if(!token['mytoken']){
+            history.push('/')
+        }
+    }, [token])
 
 
   const editButton = (pressevent) => {
@@ -42,6 +49,11 @@ function App() {
     })
 
     setPressevents(new_pressevents)
+  }
+
+  const logoutButton = () => {
+    removeToken(['mytoken'])
+
   }
 
   const updatedInformation= (pressevent) => {
@@ -80,6 +92,11 @@ function App() {
 
       <div className="col">
         <button onClick={presseventForm} className="btn btn-primary">Insert Press Event</button>
+      </div>
+
+
+      <div className="col">
+        <button onClick={logoutButton} className="btn btn-primary">Logout</button>
       </div>
 
 

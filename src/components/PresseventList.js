@@ -13,7 +13,7 @@ function PresseventList(props) {
     }
 
     const deleteButton = (pressevent) => {
-        APIService.DeletePressevent(pressevent.id)
+        APIService.DeletePressevent(pressevent.id, token['mytoken'])
         .then(() => props.deleteButton(pressevent))
         .catch(error => console.log(error))
 
@@ -35,6 +35,7 @@ function PresseventList(props) {
                     <button className="btn btn-primary"
                             onClick={() => editButton(pressevent)}>Update</button>
                   </div>
+
 
                   <div className="col">
                     <button onClick={() => deleteButton(pressevent)}
