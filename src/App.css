@@ -39,20 +39,15 @@
 
 
 .logoutButton{
-
-  border-radius: 5%;
-  background-color: #235789;
+  /*height: 55px;*/
   border: none;
-  color: white;
-  padding: 10px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
+  background-color: white;
+
 }
 .logoutButton:hover {
-  background-color: #000;
+  background-color: white;
 }
 
 
@@ -68,22 +63,20 @@
 
 .navbar {
   width: 100%;
-  background-color: #fff;
+  background-color: white;
   overflow: auto;
-  height: 85px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-
+  height: 105px;
 }
 
 .navbar a {
   float: right;
   color: white;
   text-decoration: none;
-  font-size: 17px;
+
 }
 
 .active {
-  background-color: #4CAF50;
+  /*background-color: #4CAF50;*/
 }
 
 .stream_header {
