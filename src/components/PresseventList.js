@@ -8,9 +8,6 @@ function PresseventList(props) {
 
     const [token] = useCookies(['mytoken'])
 
-    const editButton = (pressevent) => {
-        props.editButton(pressevent)
-    }
 
     const deleteButton = (pressevent) => {
         APIService.DeletePressevent(pressevent.id, token['mytoken'])
@@ -22,31 +19,35 @@ function PresseventList(props) {
 
     return (
 
-        <div>
+        <div class="container">
+
           {props.pressevents && props.pressevents.map(pressevent => {
+
             return (
-              <div key={pressevent.id}>
-                <h4>{pressevent.device_id}</h4>
-                <h4>{pressevent.is_button_on.toString()}</h4>
-                <h4>{pressevent.created_at}</h4>
+              <div className="row">
+                  <div className="row"
+                        key={pressevent.id}>
 
-                <div className="row">
-                  <div className="col-md-1">
-                    <button className="btn btn-primary"
-                            onClick={() => editButton(pressevent)}>Update</button>
-                  </div>
+                    <div className="col-sm-1">
+                      <h4>{pressevent.device_id}</h4>
+                    </div>
 
+                    <div className="col-sm-8">
+                      <h5>{pressevent.created_at}</h5>
+                    </div>
 
-                  <div className="col">
-                    <button onClick={() => deleteButton(pressevent)}
-                          className="btn btn-danger">Delete</button>
-                  </div>
+                    <div className="col-sm-3">
+                      <button onClick={() => deleteButton(pressevent)}
+                              className="btn btn-danger">Delete</button>
+                    </div>
+
+                    <hr className="col hrclass"/>
                 </div>
-
-                <hr className = "hrclass"/>
               </div>
+
           )
         })}
+
         </div>
 
     )

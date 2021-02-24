@@ -69,12 +69,6 @@ function App() {
       setPressevents(new_pressevent)
   }
 
-  const insertedInformation = (pressevent) => {
-    const new_pressevents = [...pressevents, pressevent]
-    setPressevents(new_pressevents)
-
-  }
-
 
   const presseventForm= () => {
     setEditPressevent({device_id: '', is_button_on: true, created_at: ''})
@@ -86,27 +80,22 @@ function App() {
 
     <div className="row">
       <div className="col">
-        <h3>telexi stream</h3>
+        <h2>telexi stream</h2>
+        <br/>
         <br/>
       </div>
 
       <div className="col">
-        <button onClick={presseventForm} className="btn btn-primary">Insert Press Event</button>
-      </div>
-
-
-      <div className="col">
         <button onClick={logoutButton} className="btn btn-primary">Logout</button>
       </div>
+    </div>
 
+    <div className="row">
 
     </div>
 
 
-      <PresseventList pressevents={pressevents} editButton={editButton} deleteButton={deleteButton}/>
-
-      {editPressevent ? <Form pressevent={editPressevent} updatedInformation={updatedInformation} insertedInformation={insertedInformation}/> : null}
-
+      <PresseventList pressevents={pressevents} deleteButton={deleteButton}/>
 
     </div>
   );
