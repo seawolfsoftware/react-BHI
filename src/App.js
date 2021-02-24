@@ -6,6 +6,7 @@ import Form from './components/Form';
 import {useCookies} from 'react-cookie';
 import {useHistory} from 'react-router-dom';
 import telexiLogo from './static/img/rsz_telexi_blue_transparent.png';
+import profile_icon from './static/img/dog_profile.png';
 
 
 
@@ -68,25 +69,34 @@ function App() {
   return (
     <div className="App">
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-      <img className="telexi_logo" src={telexiLogo} alt="telexi logo" height="58px"/>
+<nav className="navbar navbar-inverse">
+  <div className="container-fluid">
+    <div className="navbar-header">
+      <a className="navbar-brand"
+          href="#">
+      <img className="telexi_logo"
+            src={telexiLogo}
+            alt="telexi logo"
+            height="75px"/>
       </a>
     </div>
-    <ul class="nav navbar-nav">
+    <ul className="nav navbar-nav">
 
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> <button onClick={logoutButton}
-                className="logoutButton">Logout</button></a></li>
+    <ul className="nav navbar-nav navbar-right">
+      <li><a href="#">
+            <button onClick={logoutButton}
+                    className="logoutButton">
+                    <img
+                      src={profile_icon}
+                      alt="profile icon"
+                      height="75px"/>
+            </button>
+          </a>
+      </li>
     </ul>
   </div>
 </nav>
-
-
-
 
 
     <div className="row">

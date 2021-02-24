@@ -19,7 +19,7 @@ function PresseventList(props) {
 
     return (
 
-        <div class="streambox">
+        <div className="streambox">
 
           {props.pressevents && props.pressevents.map(pressevent => {
 
