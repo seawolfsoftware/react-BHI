@@ -7,6 +7,7 @@ import {useCookies} from 'react-cookie';
 import {useHistory} from 'react-router-dom';
 import telexiLogo from './static/img/rsz_telexi_blue_transparent.png';
 import profile_icon from './static/img/dog_profile.png';
+import Avatar from '@material-ui/core/Avatar';
 
 
 
@@ -87,12 +88,11 @@ function App() {
           <li><a href="#">
                 <button onClick={logoutButton}
                         className="logoutButton">
-                        <img className="profile_icon"
-                          src={profile_icon}
-                          alt="profile icon"
-                          height="75px"/>
+                        <Avatar alt="dog profile" src={profile_icon}/>
+
                 </button>
               </a>
+
           </li>
         </ul>
       </div>
