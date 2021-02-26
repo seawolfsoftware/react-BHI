@@ -38,6 +38,49 @@
 }
 
 
+.faq_container {
+  margin: 5%;
+  font-family: 'Roboto', sans-serif;
+}
+.faq_header {
+  margin-left: 5%;
+  margin-top: 5%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+
+}
+.faq_question_headers {
+  font-weight: 500;
+  font-style: oblique;
+  margin-bottom: 3%;
+}
+
+.faq_paragraph{
+  margin-bottom: 6%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .logoutButton{
   /*height: 55px;*/
   border: none;

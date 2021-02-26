@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Route, BrowserRouter} from 'react-router-dom';
 import Login from './components/Login';
+import Faq from './components/Faq';
+
 import {CookiesProvider} from 'react-cookie';
 
 
@@ -16,6 +18,7 @@ function Router() {
         <BrowserRouter>
             <Route exact path ='/' component={Login} />
             <Route exact path ='/press_events' component={App} />
+            <Route exact path ='/faq' component={Faq} />
         </BrowserRouter>
       </CookiesProvider>
     )
