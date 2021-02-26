@@ -41,37 +41,45 @@
 .faq_container {
   margin: 5%;
   font-family: 'Roboto', sans-serif;
+  margin-bottom: 30%;
 }
-.faq_header {
+.header {
   margin-left: 5%;
   margin-top: 5%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  margin-bottom: 5%;
+font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-align: center;
 
 }
-.faq_question_headers {
+.question_headers {
   font-weight: 500;
   font-style: oblique;
+  margin-top: 10%;
   margin-bottom: 3%;
 }
 
-.faq_paragraph{
-  margin-bottom: 6%;
+.paragraph{
+  margin-top: 8%;
+  margin-bottom: 8%;
 }
 
 
+.developed_by_logo {
+  background-color: #333230;
+  position: bottom;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: auto;
+}
 
 
-
-
-
-
-
-
-
-
-
-
+.developed_container {
+    background-color: #333230;
+    color: white;
+    padding-bottom: 15%;
+}
 
 
 
