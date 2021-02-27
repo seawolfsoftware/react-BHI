@@ -30,7 +30,7 @@ function Faq(props) {
                 is a communication platform which seeks to improve
                 mutual understanding between humans and dogs. </p>
 
-            <hr/>
+            <hr className="hr"/>
             <h4 className="question_headers">What is it...exactly?</h4>
                 <p className="paragraph">Physically, <em>telexi </em>
                  is a series of manufactured tiles with embedded touch sensors
@@ -44,15 +44,21 @@ function Faq(props) {
                 touch as an intent and vocalizes the intent with an associated
                 audio clip.</p>
 
-            <hr/>
+            <hr className="hr"/>
             <h4 className="question_headers">How does it work?</h4>
 
                 <p className="paragraph">Consider a dog who’s conditioned to
                 associate the word “water” with the real thing. When
                 its trainer speaks “water”, the dog receives water. </p>
 
-                <p className="paragraph">Now let's equip the trainer with
-                <em> telexi</em>'s terminal and app.</p>
+                <p>Image here of man serving water to dog in dish while saying "water" </p>
+
+                <p className="paragraph">Now let's equip the trainer with a
+                <em> telexi</em> terminal and app.</p>
+
+                <p className="paragraph">The trainer plugs in the terminal
+                and opens his phone's wifi settings to select the <em>telexi</em> network,
+                which establishes an internet connection with the wifi router.</p>
 
                 <div>
                     <img className="draft"
@@ -62,37 +68,40 @@ function Faq(props) {
                     width="375px"/>
                 </div>
 
-                <p className="paragraph">The trainer plugs in the terminal, and connects
-                it to the internet with the local wifi. </p>
 
-                <p className="paragraph">Then, he opens the <em>telexi </em> app,
-                where the trainer speaks "water" as the app records the voice and uploads the audio clip into the
-                <em> telexi</em> terminal, which can now speak "water" from
-                its position on the floor or wall. </p>
+                <p className="paragraph">The trainer then opens the <em>telexi </em> app,
+                where he's prompted for a recording.
+                He speaks "water" and submits the audio clip.</p>
 
-                <p className="paragraph">Now, the trainer is ready to attach a tile. The tile
-                will serve as a visual representation of the word --
-                in this case, "water". </p>
+                <p className="paragraph"><em>telexi</em> uploads the audio clip into his terminal's vocabulary,
+                which can now speak "water" from its position on the floor, wall, or wherever it's stationed.</p>
 
-                <p className="paragraph">We must use unique
-                shapes to distinguish between words. So, the trainer selects a shape
-                and connects the tile to the <em>telexi </em> terminal.
+                <p className="paragraph">Our trainer is now ready to attach a tile. The tile
+                will serve as a visual representation of "water".</p>
+
+                <p>Image here where man connects a tile to the terminal while dog watches on</p>
+
+                <p className="paragraph">In order to distinguish between words, we must use unique
+                shapes. So, the trainer chooses a circle
+                and connects the tile to the terminal.
                  </p>
 
+                <p className="paragraph">Navigating back to the app, he
+                 assigns the "water" audio clip to the tile. Now, when his dog touches the
+                tile, it can request water! </p>
 
-                <p className="paragraph">If we activate
-                the speaker to say “water” when the dog touches the
-                tile, the dog can request water! </p>
+                <p>insert image of dog touching tile with its nose as man watches on with a smile</p>
 
             <div>
-                <p className="paragraph">The dog has telephoned a lexigram!</p>
+                <p className="paragraph">The dog telephoned a lexigram!</p>
             </div>
-            <hr/>
+
+            <hr className="hr"/>
 
             <h4 className="question_headers">
             Ok, so the dog can “talk” but isn’t this a novelty? </h4>
 
-                <p className="paragraph">True -- touching a pad to speak a word isn’t exactly
+                <p className="paragraph">True -- touching a tile to speak a word isn’t exactly
                 remarkable. Products like these already exist. </p>
 
                 <p className="paragraph">What separates <em>telexi</em> from traditional
@@ -101,7 +110,7 @@ function Faq(props) {
                 <p className="paragraph"><em>telexi</em> tracks touch events over time to visualize patterns
                 which emerge in data; data which is profiled and
                 sourced as a point of reference for dogs of the same
-                breed, age, gender, and other criteria.</p>
+                breed, age, gender, or other criteria.</p>
 
                 <p className="paragraph"><em>telexi</em> aims to equip trainers and researchers
                 with a tool to help improve understanding of
