@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import ReactTooltip from 'react-tooltip';
 import logo from '../static/img/seawolf_Logo/seawolf_Logo-02.png';
+import draft from '../static/img/draft.jpeg';
+import telexi_logo from '../static/img/rsz_telexi_blue_transparent.png';
+
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
@@ -12,7 +15,13 @@ function Faq(props) {
 
     <div>
         <div>
-            <h2 className="header">telexi</h2>
+
+            <div>
+                <img className="telexi_logo"
+                src={telexi_logo}
+                alt=""
+                />
+            </div>
 
             <div className="faq_container">
             <h4 className="question_headers">What is telexi?</h4>
@@ -42,16 +51,32 @@ function Faq(props) {
                 associate the word “water” with the real thing. When
                 its trainer speaks “water”, the dog receives water. </p>
 
-                <p className="paragraph">Now let's equip the trainer with a
-                <em> telexi</em>-enabled device.</p>
+                <p className="paragraph">Now let's equip the trainer with
+                <em> telexi</em>'s terminal and app.</p>
 
-                <p className="paragraph">The trainer records their own voice saying
-                “water” and uploads the audio to <em> telexi</em>, which can now speak
-                the word "water" from its position on the floor or wall. </p>
+                <div>
+                    <img className="draft"
+                    src={draft}
+                    alt="draft"
+                    height="auto"
+                    width="375px"/>
+                </div>
 
-                <p className="paragraph">Now, the trainer connects a tile
-                shaped like something unique, what
-                linguists call a lexigram, into the <em> telexi</em>-enabled device to serve as a visual representation of the word "water".
+                <p className="paragraph">The trainer plugs in the terminal, and connects
+                it to the internet with the local wifi. </p>
+
+                <p className="paragraph">Then, he opens the <em>telexi </em> app,
+                where the trainer speaks "water" as the app records the voice and uploads the audio clip into the
+                <em> telexi</em> terminal, which can now speak "water" from
+                its position on the floor or wall. </p>
+
+                <p className="paragraph">Now, the trainer is ready to attach a tile. The tile
+                will serve as a visual representation of the word --
+                in this case, "water". </p>
+
+                <p className="paragraph">We must use unique
+                shapes to distinguish between words. So, the trainer selects a shape
+                and connects the tile to the <em>telexi </em> terminal.
                  </p>
 
 
@@ -60,7 +85,7 @@ function Faq(props) {
                 tile, the dog can request water! </p>
 
             <div>
-                <p>The dog has telephoned a lexigram!</p>
+                <p className="paragraph">The dog has telephoned a lexigram!</p>
             </div>
             <hr/>
 
