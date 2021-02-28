@@ -17,7 +17,7 @@ function Faq(props) {
         <div>
 
             <div>
-                <img className="telexi_logo"
+                <img className="telexi_logo img-fluid"
                 src={telexi_logo}
                 alt=""
                 />
@@ -54,10 +54,10 @@ function Faq(props) {
                 <p>Image here of man serving water to dog in dish while saying "water" </p>
 
                 <p className="paragraph">Now let's equip the trainer with a
-                <em> telexi</em> terminal and app.</p>
+                <em> telexi</em> device and app.</p>
 
-                <p className="paragraph">The trainer plugs in the terminal
-                and opens his phone's wifi settings to select the <em>telexi</em> network,
+                <p className="paragraph">The trainer plugs in the device,
+                opens his phone's wifi settings, and selects the <em>telexi</em> network,
                 which establishes an internet connection with the wifi router.</p>
 
                 <div>
@@ -65,7 +65,7 @@ function Faq(props) {
                     src={draft}
                     alt="draft"
                     height="auto"
-                    width="375px"/>
+                    width="350px"/>
                 </div>
 
 
@@ -73,28 +73,29 @@ function Faq(props) {
                 where he's prompted for a recording.
                 He speaks "water" and submits the audio clip.</p>
 
-                <p className="paragraph"><em>telexi</em> uploads the audio clip into his terminal's vocabulary,
-                which can now speak "water" from its position on the floor, wall, or wherever it's stationed.</p>
-
                 <p className="paragraph">Our trainer is now ready to attach a tile. The tile
                 will serve as a visual representation of "water".</p>
 
-                <p>Image here where man connects a tile to the terminal while dog watches on</p>
+                <p>Image here where man connects a tile to the device while dog watches on</p>
 
                 <p className="paragraph">In order to distinguish between words, we must use unique
-                shapes. So, the trainer chooses a circle
-                and connects the tile to the terminal.
+                shapes called lexigrams. So, the trainer chooses a circle
+                and connects the tile to the device.
                  </p>
 
                 <p className="paragraph">Navigating back to the app, he
-                 assigns the "water" audio clip to the tile. Now, when his dog touches the
-                tile, it can request water! </p>
+                 assigns the "water" audio clip to the tile. </p>
+
+                 <p className="paragraph"><em>telexi</em> uploads
+                 the clip into his device's vocabulary,
+                which can now speak "water" from its position on the floor, wall, or wherever it's stationed.</p>
 
                 <p>insert image of dog touching tile with its nose as man watches on with a smile</p>
 
-            <div>
-                <p className="paragraph">The dog telephoned a lexigram!</p>
-            </div>
+                <p p className="paragraph">Now, when the dog touches the
+                tile, it can request water! The dog telephoned a lexigram!</p>
+
+
 
             <hr className="hr"/>
 
