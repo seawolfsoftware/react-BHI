@@ -107,10 +107,9 @@ font-family: 'Montserrat', sans-serif;
 
 
 .telexi_logo {
-  height: 75px;
-  width: auto;
-  margin-left: 21%;
-  margin-top: 10%;
+  height: 70px;
+  width: 250px;
+
 }
 
 .streambox {
@@ -141,6 +140,7 @@ font-family: 'Montserrat', sans-serif;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 7%;
 }
 
 .stream_header {
@@ -154,7 +154,7 @@ font-family: 'Montserrat', sans-serif;
   }
 
   .telexi_logo {
-    height: 70px;
+
   }
 
   .navbar {
