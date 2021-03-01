@@ -41,13 +41,13 @@
 .faq_container {
   margin: 5%;
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 30%;
+  margin-bottom: 10%;
 }
 .header {
   margin-left: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
-font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-align: center;
 
@@ -55,24 +55,26 @@ font-family: 'Montserrat', sans-serif;
 .question_headers {
   font-weight: 500;
   font-style: oblique;
-  margin-top: 10%;
+  margin-top: 9%;
   margin-bottom: 3%;
+  text-align: center;
 }
 
 .paragraph{
   margin-top: 8%;
   margin-bottom: 8%;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
 .developed_by_logo {
+  display: block;
   background-color: #333230;
   position: bottom;
-  left: 0px;
-  top: 0px;
   width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -84,13 +86,11 @@ font-family: 'Montserrat', sans-serif;
 
 
 
-
-
 .hr {
-    border-top: 2px solid #235789;
+    /*border-top: 1px solid #235789;*/
+    /*border-bottom: 1px solid #F1D302;*/
     border-radius: 15px;
 }
-
 
 
 .logoutButton{
@@ -109,6 +109,9 @@ font-family: 'Montserrat', sans-serif;
 .telexi_logo {
   height: 70px;
   width: 250px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
 
 }
 
@@ -138,14 +141,92 @@ font-family: 'Montserrat', sans-serif;
 
 .draft {
     display: block;
+    transform: scale(1.15);
+    height: auto;
+    width: 375px;
+    padding-top: 10%;
+    padding-bottom: 10%;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 7%;
+    padding-right: 9%;
 }
 
 .stream_header {
   margin-top: 5%;
 }
+
+
+
+  /* For desktop: */
+@media only screen and (min-width: 768px) {
+
+
+  .draft {
+    display: block;
+    height: 600px;
+    width: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .telexi_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .paragraph {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .question_headers {
+    font-weight: 500;
+    font-style: oblique;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-align: center;
+  }
+
+  .insert {
+    text-align: center;
+    display: block;
+    /*height: 600px;*/
+    width: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .developed_by_logo {
+    display: block;
+    background-color: #333230;
+    position: bottom;
+    width: auto;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .developed_container {
+    background-color: #333230;
+    color: white;
+    height: 500px;
+  }
+
+
+}
+
+
 
 @media screen and (max-width: 500px) {
   .navbar a {
@@ -153,9 +234,6 @@ font-family: 'Montserrat', sans-serif;
     display: block;
   }
 
-  .telexi_logo {
-
-  }
 
   .navbar {
     width: 100%;
