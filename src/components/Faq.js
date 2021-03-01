@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactTooltip from 'react-tooltip';
 import logo from '../static/img/seawolf_Logo/seawolf_Logo-02.png';
-import draft from '../static/img/draft.jpeg';
+import draft from '../static/img/draft.png';
 import telexi_logo from '../static/img/rsz_telexi_blue_transparent.png';
 
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -64,8 +64,7 @@ function Faq(props) {
                     <img className="draft"
                     src={draft}
                     alt="draft"
-                    height="auto"
-                    width="350px"/>
+                    />
                 </div>
 
 

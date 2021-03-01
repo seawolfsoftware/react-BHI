@@ -47,7 +47,7 @@
   margin-left: 5%;
   margin-top: 5%;
   margin-bottom: 5%;
-font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-align: center;
 
@@ -84,13 +84,11 @@ font-family: 'Montserrat', sans-serif;
 
 
 
-
-
 .hr {
-    border-top: 2px solid #235789;
+    /*border-top: 1px solid #235789;*/
+    /*border-bottom: 1px solid #F1D302;*/
     border-radius: 15px;
 }
-
 
 
 .logoutButton{
@@ -109,6 +107,9 @@ font-family: 'Montserrat', sans-serif;
 .telexi_logo {
   height: 70px;
   width: 250px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto
 
 }
 
@@ -138,14 +139,46 @@ font-family: 'Montserrat', sans-serif;
 
 .draft {
     display: block;
+    transform: scale(1.15);
+    height: auto;
+    width: 375px;
+    padding-top: 3%;
+    padding-bottom: 3%;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 7%;
+    padding-right: 9%;
 }
 
 .stream_header {
   margin-top: 5%;
 }
+
+
+
+  /* For desktop: */
+@media only screen and (min-width: 768px) {
+
+
+  .draft {
+    display: block;
+    transform: scale(1.15);
+    height: 700px;
+    width: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 9%;
+  }
+
+  .telexi_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+}
+
+
 
 @media screen and (max-width: 500px) {
   .navbar a {
@@ -153,9 +186,6 @@ font-family: 'Montserrat', sans-serif;
     display: block;
   }
 
-  .telexi_logo {
-
-  }
 
   .navbar {
     width: 100%;
