@@ -26,21 +26,21 @@ function Faq(props) {
             <div className="faq_container">
             <h4 className="question_headers">What is telexi?</h4>
                 <p className="paragraph">A compound of telephone and lexigram,
-                <em> telexi </em>
+                <em className="telexi_text"> telexi </em>
                 is a communication platform which seeks to improve
                 mutual understanding between humans and dogs. </p>
 
             <hr className="hr"/>
-            <h4 className="question_headers">What is it...exactly?</h4>
-                <p className="paragraph">Physically, <em>telexi </em>
+            <h4 className="question_headers">What is it ...exactly?</h4>
+                <p className="paragraph">Physically, <em className="telexi_text">telexi </em>
                  is a series of manufactured tiles with embedded touch sensors
                 and a speaker.</p>
 
-                <p className="paragraph">The sensors enable <em>telexi </em>
+                <p className="paragraph">The sensors enable <em className="telexi_text">telexi </em>
                 to receive and process touch events from dogs. </p>
 
                 <p className="paragraph">When a dog touches a
-                tile with its nose or paw, <em>telexi</em> interprets this
+                tile with its nose or paw, <em className="telexi_text">telexi </em> interprets this
                 touch as an intent and vocalizes the intent with an associated
                 audio clip.</p>
 
@@ -60,6 +60,10 @@ function Faq(props) {
                 opens his phone's wifi settings, and selects the <em>telexi</em> network,
                 which establishes an internet connection with the wifi router.</p>
 
+                <p className="paragraph">The trainer then opens the <em className="telexi_text">telexi </em> app,
+                where he's prompted for a recording.
+                He speaks "water" and submits the audio clip.</p>
+
                 <div>
                     <img className="draft"
                     src={draft}
@@ -67,10 +71,8 @@ function Faq(props) {
                     />
                 </div>
 
+<hr className="hr"/>
 
-                <p className="paragraph">The trainer then opens the <em>telexi </em> app,
-                where he's prompted for a recording.
-                He speaks "water" and submits the audio clip.</p>
 
                 <p className="paragraph">Our trainer is now ready to attach a tile. The tile
                 will serve as a visual representation of "water".</p>
@@ -78,14 +80,14 @@ function Faq(props) {
                 <p className="insert">Image here where man connects a tile to the device while dog watches on</p>
 
                 <p className="paragraph">In order to distinguish between words, we must use unique
-                shapes called lexigrams. So, the trainer chooses a circle
-                and connects the tile to the device.
+                shapes called lexigrams. Because the shape of his dog's water dish is a circle,
+                he chooses that shape and connects the tile to the device.
                  </p>
 
                 <p className="paragraph">Navigating back to the app, he
                  assigns the "water" audio clip to the tile. </p>
 
-                 <p className="paragraph"><em>telexi</em> uploads
+                 <p className="paragraph"><em className="telexi_text">telexi </em> uploads
                  the clip into his device's vocabulary,
                 which can now speak "water" from its position on the floor, wall, or wherever it's stationed.</p>
 
@@ -102,19 +104,19 @@ function Faq(props) {
             Ok, so the dog can “talk” but isn’t this a novelty? </h4>
 
                 <p className="paragraph">True -- touching a tile to speak a word isn’t exactly
-                remarkable. Products like these already exist. </p>
+                remarkable. Products like these exist already. </p>
 
-                <p className="paragraph">What separates <em>telexi</em> from traditional
+                <p className="paragraph">What separates <em className="telexi_text">telexi </em> from traditional
                 training buttons is the integration of software.</p>
 
-                <p className="paragraph"><em>telexi</em> tracks touch events over time to visualize patterns
+                <p className="paragraph"><em className="telexi_text">telexi </em> tracks touch events over time to visualize patterns
                 which emerge in data; data which is profiled and
-                sourced as a point of reference for dogs of the same
-                breed, age, gender, or other criteria.</p>
+                sourced as a reference point for dogs of the same
+                breed, sex, age, or other criteria.</p>
 
-                <p className="paragraph"><em>telexi</em> aims to equip trainers and researchers
-                with a tool to help improve understanding of
-                dog cognition, sourced from touch events from best
+                <p className="paragraph">At large, <em className="telexi_text">telexi </em> aims to equip trainers and researchers
+                with a tool to help improve humanity's understanding of
+                dog cognition, sourced from touch events by our own best
                 friends around the world.</p>
             </div>
 
@@ -127,9 +129,13 @@ function Faq(props) {
                 alt="seawolf software logo"/>
 
             <div className="row">
+                <span className="col"></span>
+                <span className="col"></span>
                 <TwitterIcon className="col"/>
                 <InstagramIcon className="col"/>
                 <YouTubeIcon className="col"/>
+                <span className="col"></span>
+                <span className="col"></span>
             </div>
 
         </div>
