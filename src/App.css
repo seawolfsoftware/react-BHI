@@ -41,7 +41,7 @@
 .faq_container {
   margin: 5%;
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 30%;
+  margin-bottom: 10%;
 }
 .header {
   margin-left: 5%;
@@ -55,24 +55,26 @@
 .question_headers {
   font-weight: 500;
   font-style: oblique;
-  margin-top: 10%;
+  margin-top: 9%;
   margin-bottom: 3%;
+  text-align: center;
 }
 
 .paragraph{
   margin-top: 8%;
   margin-bottom: 8%;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
 .developed_by_logo {
+  display: block;
   background-color: #333230;
   position: bottom;
-  left: 0px;
-  top: 0px;
   width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -142,8 +144,8 @@
     transform: scale(1.15);
     height: auto;
     width: 375px;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     margin-left: auto;
     margin-right: auto;
     padding-right: 9%;
@@ -161,14 +163,13 @@
 
   .draft {
     display: block;
-    transform: scale(1.15);
-    height: 700px;
+    height: 600px;
     width: auto;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 8%;
     margin-left: auto;
     margin-right: auto;
-    padding-right: 9%;
   }
 
   .telexi_logo {
@@ -176,6 +177,53 @@
     margin-left: auto;
     margin-right: auto
   }
+
+  .paragraph {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .question_headers {
+    font-weight: 500;
+    font-style: oblique;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-align: center;
+  }
+
+  .insert {
+    text-align: center;
+    display: block;
+    /*height: 600px;*/
+    width: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .developed_by_logo {
+    display: block;
+    background-color: #333230;
+    position: bottom;
+    width: auto;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .developed_container {
+    background-color: #333230;
+    color: white;
+    height: 500px;
+  }
+
+
 }
 
 
