@@ -160,15 +160,27 @@
   margin-top: 5%;
 }
 
+.touch_events_diagram {
+  display: block;
+  height: 300px;
+  /*width: 100%;*/
+  margin-left: auto;
+  margin-right: auto;
 
+}
 
   /* For desktop: */
 @media only screen and (min-width: 768px) {
 
-.hr {
 
-    width: 45%;
-}
+  .touch_events_diagram {
+    height: 500px;
+  }
+
+  .hr {
+
+      width: 45%;
+  }
 
   .social_icons {
     display: block;
@@ -188,6 +200,7 @@
   }
 
   .telexi_logo {
+    margin-top: 5%;
     display: block;
     margin-left: auto;
     margin-right: auto
