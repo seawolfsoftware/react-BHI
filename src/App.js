@@ -20,7 +20,7 @@ function App() {
   let history = useHistory()
 
   useEffect(() => {
-    fetch('https://telexi.seawolfsoftware.io/api/v1/press_events/', {
+    fetch('https://ask-allspecieskeyboard.com/api/v1/press_events/', {
       'method': 'GET',
       headers: {
         'Content-Type': 'application/json',
