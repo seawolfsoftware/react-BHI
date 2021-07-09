@@ -5,7 +5,7 @@ export default class APIService {
 
     static UpdatePressevent(pressevent_id, body, token ){
 
-        return fetch(`https://ask-allspecieskeyboard.com/api/v1/press_events/${pressevent_id}/`,
+        return fetch(`http://127.0.0.1:8000/api/v1/press_events/${pressevent_id}/`,
         {
             'method': 'PUT',
             headers: {
@@ -18,7 +18,7 @@ export default class APIService {
     }
 
     static InsertPressevent(body, token){
-        return fetch(`https://ask-allspecieskeyboard.com/api/v1/press_events/`,
+        return fetch(`http://127.0.0.1:8000/api/v1/press_events/`,
                     {
             'method': 'POST',
             headers: {
@@ -32,7 +32,7 @@ export default class APIService {
 
 
     static DeletePressevent(pressevent_id, token){
-        return fetch(`https://ask-allspecieskeyboard.com/api/v1/press_events/${pressevent_id}/`,
+        return fetch(`http://127.0.0.1:8000/api/v1/press_events/${pressevent_id}/`,
         {
             'method': 'DELETE',
             headers: {
@@ -45,7 +45,7 @@ export default class APIService {
 
 
     static LoginUser(body){
-        return fetch(`https://ask-allspecieskeyboard.com/auth/`,
+        return fetch(`http://127.0.0.1:8000/auth/`,
                     {
             'method': 'POST',
             headers: {
@@ -58,7 +58,7 @@ export default class APIService {
 
 
     static RegisterUser(body){
-        return fetch(`https://ask-allspecieskeyboard.com/api/v1/users/`,
+        return fetch(`http://127.0.0.1:8000/api/v1/users/`,
                     {
             'method': 'POST',
             headers: {

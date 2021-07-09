@@ -5,7 +5,6 @@ import PresseventList from './components/PresseventList';
 import Form from './components/Form';
 import {useCookies} from 'react-cookie';
 import {useHistory} from 'react-router-dom';
-import telexiLogo from './static/img/rsz_telexi_blue_transparent.png';
 import profile_icon from './static/img/dog_profile.png';
 import Avatar from '@material-ui/core/Avatar';
 
@@ -20,7 +19,7 @@ function App() {
   let history = useHistory()
 
   useEffect(() => {
-    fetch('https://ask-allspecieskeyboard.com/api/v1/press_events/', {
+    fetch('http://127.0.0.1:8000/api/v1/press_events/', {
       'method': 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -75,24 +74,20 @@ function App() {
         <div className="navbar-header">
           <a className="navbar-brand"
               href="#">
-          <img className="telexi_logo"
-                src={telexiLogo}
-                alt="telexi logo"
-                height="75px"/>
+              Bonobo Hope Initiative
           </a>
         </div>
         <ul className="nav navbar-nav">
 
         </ul>
         <ul className="nav navbar-nav navbar-right">
-          <li><a href="#">
+          <li>
+              <a href="#">
                 <button onClick={logoutButton}
                         className="logoutButton">
                         <Avatar alt="dog profile" src={profile_icon}/>
-
                 </button>
               </a>
-
           </li>
         </ul>
       </div>
@@ -102,7 +97,7 @@ function App() {
     <div className="row">
       <div className="col">
         <h2 className="stream_header">Event Stream</h2>
-        <br/>
+
         <br/>
       </div>
     </div>
